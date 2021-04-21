@@ -5,5 +5,8 @@
     - python manage.py migrate
     - python manage.py createsuperuser
     - python manage.py runserver
+- bookmark 앱 시작
+    - python manage.py startapp bookmark
+    - 'bookmark', in INSTALLED_APPS
 
     
