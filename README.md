@@ -19,3 +19,4 @@ models -> admin -> views -> templates -> urls
     - urls; bookmark/urls bookmark:list
 - Add Bookmark
     - bookmark/views BookmarkCreateView
+    - bookmark/templates/bookmark bookmark_create.html, bookmark_list.html
