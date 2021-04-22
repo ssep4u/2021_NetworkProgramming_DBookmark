@@ -8,5 +8,8 @@
 - bookmark 앱 시작
     - python manage.py startapp bookmark
     - 'bookmark', in INSTALLED_APPS
+- bookmark/models Bookmark
+    - python manage.py makemigrations bookmark
+    - python manage.py migrate
 
     
