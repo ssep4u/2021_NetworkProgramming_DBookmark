@@ -23,7 +23,7 @@
             <td><a href="{% url 'bookmark:detail' pk=bookmark.pk %}">{{ bookmark.name }}</a></td>
             <td>{{ bookmark.url }}</td>
             <td><a href="{% url 'bookmark:update' pk=bookmark.pk %}">Modify</a></td>
-            <td>Delete</td>
+            <td><a href="{% url 'bookmark:delete' pk=bookmark.pk %}">Delete</a></td>
         </tr>
     {% endfor %}
     </tbody>
