@@ -40,3 +40,9 @@ models -> admin -> views -> templates -> urls
 - startapp accounts
     - python manage.py startapp accounts
     - 'accounts' in INSTALLED_APPS settings
+- models, admin, forms
+    - accounts/models Profile
+    - python manage.py makemigrations accounts
+    - python manage.py migrate
+    - accounts/admin ProfileAdmin
+    - accounts/forms RegisterForm
