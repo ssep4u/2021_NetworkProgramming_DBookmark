@@ -60,3 +60,12 @@ models -> admin -> views -> templates -> urls
     - templates/accounts login, login_fail
     - accounts/urls login, logout
     - templates/bookmark add login, logout in bookmark_list
+- 로그인 동작
+    - templates/bookmark user.is_authenticated in bookmark_list
+    - accounts/forms LoginForm
+    - bookmark/views add 'profile' in fields in BookmarkCreateView
+    - 로그인 요청하기 - FBV: @login_required, CBV: LoginRequiredMixin
+    - bookmark_list에서 로그인 하면, 해당 profile bookmark만 보여주기; 로그인 안하면 전체 bookmark 보여주기
+    - Add Bookmark 할 때, profile을 로그인 한 사용자로 초기화하기
+    - Add Bookmark 할 때, profile 보이지 않기
+    - 로그인 하지 않고, Add Bookmark 하면, 로그인 요청하고, 그 후에 Add Bookmark 하도록 하자

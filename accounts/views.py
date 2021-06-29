@@ -1,8 +1,8 @@
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
-from accounts.forms import RegisterForm
+from accounts.forms import RegisterForm, LoginForm
 
 
 def register(request):
@@ -23,14 +23,15 @@ def my_login(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('bookmark:list')
+            return redirect(request.GET.get('next') or 'bookmark:list')
         else:
             return render(request, 'accounts/login_fail.html')
     else:
-        form = AuthenticationForm()
+        form = LoginForm()
     return render(request, 'accounts/login.html', {'form': form})
 
 
+@login_required
 def my_logout(request):
     logout(request)
     return redirect('bookmark:list')
