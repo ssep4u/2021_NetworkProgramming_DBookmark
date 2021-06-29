@@ -46,3 +46,7 @@ models -> admin -> views -> templates -> urls
     - python manage.py migrate
     - accounts/admin ProfileAdmin
     - accounts/forms RegisterForm
+- bookmark/models add profile in Bookmark
+    - python manage.py makemigrations bookmark
+    - 에러 나면 기본값 넣어주기 위해 1 선택하고, 기본값은 1로 한다
+    - python manage.py migrate
