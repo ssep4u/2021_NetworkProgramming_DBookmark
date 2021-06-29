@@ -50,3 +50,8 @@ models -> admin -> views -> templates -> urls
     - python manage.py makemigrations bookmark
     - 에러 나면 기본값 넣어주기 위해 1 선택하고, 기본값은 1로 한다
     - python manage.py migrate
+- register
+    - accounts/views register
+    - templates/accounts register, register_done
+    - accounts/urls register; config/urls
+    - templates/bookmark add Register in bookmark_list
