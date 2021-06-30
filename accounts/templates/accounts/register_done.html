@@ -5,5 +5,5 @@
 {% block content %}
     {{ user }}님, 회원가입을 환영합니다.<br>
     <a href="{% url 'bookmark:list' %}">List Bookmark</a><br>
-    <a href="">로그인</a>
+    <a href="{% url 'accounts:login' %}">로그인</a>
 {% endblock %}

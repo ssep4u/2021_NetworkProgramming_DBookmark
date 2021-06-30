@@ -13,3 +13,11 @@ class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = CustomUser
         fields = ('username', 'nickname')
+
+
+class LoginForm(forms.ModelForm):
+    password = forms.CharField(label='패스워드', widget=forms.PasswordInput)
+
+    class Meta:
+        model = CustomUser
+        fields = ('username', 'password')

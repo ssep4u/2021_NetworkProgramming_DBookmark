@@ -4,7 +4,9 @@
 
 {% block content %}
     <a href="{% url 'bookmark:add' %}">Add Bookmark</a>
+    <a href="{% url 'accounts:logout' %}">Logout</a>
     <a href="{% url 'accounts:register' %}">Register</a>
+    <a href="{% url 'accounts:login' %}">Login</a>
     <table>
         <thead>
         <tr>

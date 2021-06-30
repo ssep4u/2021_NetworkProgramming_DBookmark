@@ -53,3 +53,8 @@ models -> admin -> views -> templates -> urls
     - accounts/views register
     - templates/accounts register, register_done; templates/bookmark bookmark_list
     - accounts/urls register; config/urls
+- Login, Logout
+    - accounts/forms LoginForm
+    - accounts/views my_login, my_logout
+    - templates/accounts login, login_fail; templates/bookmark bookmark_list
+    - accounts/urls login, logout
