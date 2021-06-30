@@ -40,3 +40,12 @@ models -> admin -> views -> templates -> urls
 - startapp accounts
     - python manage.py startapp accounts
     - add 'accounts' in INSTALLED_APPS settings.py
+- models, AUTH_USER_MODEL, admin, forms
+    - accounts/models CustomUser(AbstractUser)
+        1. db.sqlite3 삭제
+        1. migrations 폴더에 있는 .py 삭제
+        1. python manage.py makemigrations
+        1. python manage.py migrate
+    - AUTH_USER_MODEL = 'accounts.CustomUser' in settings.py
+    - accounts/admin CustomUserAdmin
+    - accounts/forms CustomUserCreationForm(UserCreationForm)
