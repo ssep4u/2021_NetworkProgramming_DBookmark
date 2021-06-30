@@ -49,3 +49,7 @@ models -> admin -> views -> templates -> urls
     - AUTH_USER_MODEL = 'accounts.CustomUser' in settings.py
     - accounts/admin CustomUserAdmin
     - accounts/forms CustomUserCreationForm(UserCreationForm)
+- Register
+    - accounts/views register
+    - templates/accounts register, register_done; templates/bookmark bookmark_list
+    - accounts/urls register; config/urls
