@@ -1,8 +1,11 @@
 from django.db import models
 from django.shortcuts import resolve_url
 
+from accounts.models import CustomUser
+
 
 class Bookmark(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     name = models.CharField('Site name', max_length=30)
     url = models.URLField('Site URL')
 

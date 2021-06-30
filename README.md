@@ -58,3 +58,5 @@ models -> admin -> views -> templates -> urls
     - accounts/views my_login, my_logout
     - templates/accounts login, login_fail; templates/bookmark bookmark_list
     - accounts/urls login, logout
+- CustomUser 사용
+    - bookmark/models add user in Bookmark
