@@ -69,3 +69,4 @@ models -> admin -> views -> templates -> urls
       - 로그인 안하면, 다 보이기
     - bookmark_create
       - user 초기화
+      - user 감추기
