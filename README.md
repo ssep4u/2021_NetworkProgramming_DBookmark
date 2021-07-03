@@ -60,3 +60,7 @@ models -> admin -> views -> templates -> urls
     - accounts/urls login, logout
 - CustomUser 사용
     - bookmark/models add user in Bookmark
+- 로그인 동작
+    - 로그인 요구하자
+      - FBV: @login_required
+      - CBV: LoginRequiredMixin
