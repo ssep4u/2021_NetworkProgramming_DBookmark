@@ -70,3 +70,4 @@ models -> admin -> views -> templates -> urls
     - bookmark_create
       - user 초기화
       - user 감추기
+    - 로그인 요구한 페이지에서 next로 이동하자
