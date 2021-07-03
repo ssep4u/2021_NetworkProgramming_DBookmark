@@ -64,3 +64,8 @@ models -> admin -> views -> templates -> urls
     - 로그인 요구하자
       - FBV: @login_required
       - CBV: LoginRequiredMixin
+    - bookmark_list
+      - 로그인 하면, 자기 것만 보이기
+      - 로그인 안하면, 다 보이기
+    - bookmark_create
+      - user 초기화
